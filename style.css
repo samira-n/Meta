@@ -159,12 +159,11 @@ body{
 }
 /* section second end*/
 
-.run_text{
+.run_text marquee{
     color: white;
     font-family: 'Audiowide';
     font-style: normal;
     font-weight: 400;
     font-size: 79px;
-    margin-top: 172px;
 }
 
