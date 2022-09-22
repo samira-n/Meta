@@ -85,3 +85,86 @@ body{
     height: 100vh;
     
 }
+
+/* Section first end */
+
+/* section second start*/
+.second_desc_left{
+    color:#fff;
+    
+}
+
+.sec_title_1{
+    font-family: 'Audiowide';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    padding-left: 50px;
+}
+.sec_title_2{
+    color: gray;
+    font-family: 'Audiowide';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    padding-left: 50px;
+}
+
+.second_desc_right button{
+    width: 246px;
+    height: 42px;
+    background-color: black;
+    color: #fff;
+    border-color: #8DFD1B;
+    font-family: 'DM Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+}
+.second_desc_right{
+    color: #fff;
+    padding-left: 20rem;
+    padding-right: 200px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+
+}
+.sec_desc_1{
+    font-family: 'DM Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    color: #8DFD1B;
+    margin-bottom: 27px;
+    border-left: solid;
+    padding-left: 22px;
+}
+
+.second_content{
+    display: flex;
+    align-items: center;
+}
+
+.sec1{
+    margin-bottom: 18px;
+}
+.sec2{
+    margin-bottom: 17px;
+}
+.sec3{
+    margin-bottom: 36px;
+}
+/* section second end*/
+
+.run_text{
+    color: white;
+    font-family: 'Audiowide';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 79px;
+    margin-top: 172px;
+}
+
