@@ -64,9 +64,7 @@ body{
     margin-bottom: 115px;
 }
 
-.first_desc{
-    
-}
+
 
 .first_desc button{
     background-color: #8DFD1B;
@@ -159,12 +157,32 @@ body{
 }
 /* section second end*/
 
-.run_text marquee{
+.run_text{
     color: white;
     font-family: 'Audiowide';
     font-style: normal;
     font-weight: 400;
     font-size: 79px;
     margin-top: 172px;
+    max-width: 90%;
+}
+.run_text div{
+    display: flex;
+    width: 200%;
+    animation: run_text 2s linear infinite;
+
 }
 
+.run_text p{
+    white-space: nowrap;
+    width: 100%;
+}
+
+@keyframes run_text{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
