@@ -157,32 +157,68 @@ body{
 }
 /* section second end*/
 
-.run_text{
+/* section run text start */
+.marquee {
     color: white;
+
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    position: absolute;
+  }
+  .marquee span {
+    display: inline-block;
+    position: relative;
+    left: 100%;
+    animation: marquee 8s linear infinite;
+
     font-family: 'Audiowide';
     font-style: normal;
     font-weight: 400;
-    font-size: 79px;
-    margin-top: 172px;
-    max-width: 90%;
-}
-.run_text div{
-    display: flex;
-    width: 200%;
-    animation: run_text 2s linear infinite;
+    font-size: 80px;
+  }
+  .marquee:hover span {
+    animation-play-state: paused;
+  }
+  
+  .marquee span:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .marquee span:nth-child(2) {
+    animation-delay: 0.8s;
+  }
+  .marquee span:nth-child(3) {
+    animation-delay: 1.6s;
+  }
+  .marquee span:nth-child(4) {
+    animation-delay: 2.4s;
+  }
+  .marquee span:nth-child(5) {
+    animation-delay: 3.2s;
+  }
+  /* .marquee span:nth-child(6) {
+    animation-delay: 4s;
+  } */
+  /* .marquee span:nth-child(7) {
+    animation-delay: 4.8s;
+  }
+  .marquee span:nth-child(8) {
+    animation-delay: 5.6s;
+  } */
+  
+  @keyframes marquee {
+    0%   { left: 100%; }
+    100% { left: -100%; }
+  }
 
-}
+  .run_text{
+    padding-top: 113px;
+  }
+  
+/* section run text end */
 
-.run_text p{
-    white-space: nowrap;
-    width: 100%;
+/* section thirth_content start */
+.thirth_content{
+    padding-top: 127px;
 }
-
-@keyframes run_text{
-    0%{
-        transform: translateX(0%);
-    }
-    100%{
-        transform: translateX(100%);
-    }
-}
+/* section thirth_content end */
