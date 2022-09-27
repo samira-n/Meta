@@ -1,5 +1,5 @@
 body{
-    padding: 50px;
+    
     background-color: black;
 }
 
@@ -8,7 +8,7 @@ body{
 .header{
     display: flex;
     justify-content: space-between;
-
+    padding: 50px;
 }
 
 .logo_and_nav{
@@ -81,6 +81,7 @@ body{
     display: flex;
     align-items: center;
     height: 100vh;
+    padding: 50px;
     
 }
 
@@ -144,6 +145,7 @@ body{
 .second_content{
     display: flex;
     align-items: center;
+    padding: 50px;
 }
 
 .sec1{
@@ -157,32 +159,129 @@ body{
 }
 /* section second end*/
 
-.run_text{
+/* section run text start */
+.marquee {
+    color: white;
+
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    position: absolute;
+  }
+  .marquee span {
+    display: inline-block;
+    position: relative;
+    left: 100%;
+    animation: marquee 8s linear infinite;
+
+    font-family: 'Audiowide';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+  }
+  .marquee:hover span {
+    animation-play-state: paused;
+  }
+  
+  .marquee span:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .marquee span:nth-child(2) {
+    animation-delay: 0.8s;
+  }
+  .marquee span:nth-child(3) {
+    animation-delay: 1.6s;
+  }
+  .marquee span:nth-child(4) {
+    animation-delay: 2.4s;
+  }
+  .marquee span:nth-child(5) {
+    animation-delay: 3.2s;
+  }
+  /* .marquee span:nth-child(6) {
+    animation-delay: 4s;
+  } */
+  /* .marquee span:nth-child(7) {
+    animation-delay: 4.8s;
+  }
+  .marquee span:nth-child(8) {
+    animation-delay: 5.6s;
+  } */
+  
+  @keyframes marquee {
+    0%   { left: 100%; }
+    100% { left: -100%; }
+  }
+
+  .run_text{
+    padding-top: 100px;
+    padding-bottom: 127px;
+  }
+  
+/* section run text end */
+
+/* section thirth_content start */
+.thirth_content{
+    padding: 50px;
+    padding-top: 120px;
+}
+
+.l1{
+    margin-right: 60px;
+    font-family: 'DM Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+.layer_one{
+    margin-bottom: 124px;
+    color: white;
+    display: flex;
+}
+.layer_two{
+    margin-bottom: 124px;
+    color: white;
+    display: flex;
+}
+.l2{
+    margin-right: 60px;
+    font-family: 'DM Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+}
+/* section thirth_content end */
+
+/* section fourth_content start */
+
+.fourth_content{
+    padding: 50px;
+    padding-top: 160px;
+    
+}
+
+.desc_4_1{
     color: white;
     font-family: 'Audiowide';
     font-style: normal;
     font-weight: 400;
-    font-size: 79px;
-    margin-top: 172px;
-    max-width: 90%;
+    font-size: 38px;
 }
-.run_text div{
+
+.desc_4_2{
+    color: #A8A8A8;
+    font-family: 'Audiowide';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+}
+
+.fourth_desc{
     display: flex;
-    width: 200%;
-    animation: run_text 2s linear infinite;
-
+    justify-content: center;
 }
-
-.run_text p{
-    white-space: nowrap;
-    width: 100%;
-}
-
-@keyframes run_text{
-    0%{
-        transform: translateX(0%);
-    }
-    100%{
-        transform: translateX(100%);
-    }
-}
+/* section fourth_content end */
