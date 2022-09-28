@@ -304,16 +304,32 @@ button.accordion:hover{
   overflow: hidden;
   background: #222222;
   width: 878px;
+  display: flex;  
+  
 
 }
 
-.content p{
-  padding-left: 20px;
-  padding-right: 20px;
+.man{
+  padding: 60px 0px 60px 60px;
+  width: 172px;
+  height: 253px;
 }
+
+.texts{
+  height: 400px;
+  padding: 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 
 .title{
   color: #8DFD1B;
+}
+p .title{
+  
+  border-left: #8DFD1B;
 }
 
 .desc{
