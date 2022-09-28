@@ -284,4 +284,41 @@ body{
   display: flex;
   justify-content: center;
 }
+.div{
+  display: flex;
+}
+
+.accordion{
+  background: #000;
+  color: #8DFD1B;
+  padding: 20px;
+  width: 200px;
+}
+button.accordion:hover{
+  background : #222222;
+}
+.content{
+  
+  transition: 0.3s ease-in-out;
+  max-height: 0px;
+  overflow: hidden;
+  background: #222222;
+  width: 878px;
+
+}
+
+.content p{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.title{
+  color: #8DFD1B;
+}
+
+.desc{
+  color: white;
+}
 /* section fourth_content end */
+
+

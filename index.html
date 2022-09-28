@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css" type="text/css"/>
-    <link rel="script" href="script.js"/>
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
@@ -12,6 +11,7 @@
     <title>Meta</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js"></script>
+
 </head>
 <body>
     <header class="header">
@@ -116,6 +116,54 @@
                 <p>THE STORY.</p>
             </div>
         </div>
+        <div class="div">
+            <button class="accordion">Our founders</button>
+            <div class="content">
+              <p class="title">META record label was founded by Shaky Lake and Baky Hike in 2020 business accelerator.</p>
+              <p class="desc">Hac habitasse platea dictumst vestibulum rhoncus est. Sit amet dictum sit amet justo. Tortor aliquam nulla facilisi cras.</pc>
+              <p class="desc">Maecenas ultricies mi eget mauris pharetra. Sit amet consectetur adipiscing elit ut aliquam purus. Porta nibh venenatis cras sed felis. Aenean vel elit scelerisque mauris pellentesque pulvinar. Et malesuada fames ac turpis egestas sed tempus. Enim sit amet venenatis urna cursus eget.</p>
+              <p class="desc">Maecenas ultricies mi eget mauris pharetra et ultrices. A condimentum vitae sapien pellentesque habitant morbi.</p>
+            </div>
+          </div>
+          
+          <div class="div">
+            <button class="accordion">Partners</button>
+            <div class="content">
+                <p class="title">META record label was founded by Shaky Lake and Baky Hike in 2020 business accelerator.</p>
+                <p class="desc">Hac habitasse platea dictumst vestibulum rhoncus est. Sit amet dictum sit amet justo. Tortor aliquam nulla facilisi cras.</pc>
+                <p class="desc">Maecenas ultricies mi eget mauris pharetra. Sit amet consectetur adipiscing elit ut aliquam purus. Porta nibh venenatis cras sed felis. Aenean vel elit scelerisque mauris pellentesque pulvinar. Et malesuada fames ac turpis egestas sed tempus. Enim sit amet venenatis urna cursus eget.</p>
+                <p class="desc">Maecenas ultricies mi eget mauris pharetra et ultrices. A condimentum vitae sapien pellentesque habitant morbi.</p>
+              
+            </div>
+          </div>
+          
+          <div class="div">
+            <button class="accordion">The future</button>
+            <div class="content">
+                <p class="title">META record label was founded by Shaky Lake and Baky Hike in 2020 business accelerator.</p>
+                <p class="desc">Hac habitasse platea dictumst vestibulum rhoncus est. Sit amet dictum sit amet justo. Tortor aliquam nulla facilisi cras.</pc>
+                <p class="desc">Maecenas ultricies mi eget mauris pharetra. Sit amet consectetur adipiscing elit ut aliquam purus. Porta nibh venenatis cras sed felis. Aenean vel elit scelerisque mauris pellentesque pulvinar. Et malesuada fames ac turpis egestas sed tempus. Enim sit amet venenatis urna cursus eget.</p>
+                <p class="desc">Maecenas ultricies mi eget mauris pharetra et ultrices. A condimentum vitae sapien pellentesque habitant morbi.</p>
+              
+            </div>
+          </div>
+          <script>
+            document.querySelectorAll('.accordion').forEach((el) => {
+            el.addEventListener('click', () => {
+          
+            let content = el.nextElementSibling;
+            console.log(content)
+        
+            if(content.style.maxHeight){
+            document.querySelectorAll('.content').forEach((el) =>       el.style.maxHeight = null)
+            } else {
+            document.querySelectorAll('.content').forEach((el) =>       el.style.maxHeight = null)
+            content.style.maxHeight = content.scrollHeight + 'px'
+            }
+        })
+        
+      })
+        </script>
     </section>
 </body>
 </html>
